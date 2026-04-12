@@ -30,7 +30,7 @@ on:
 
 env:
   CONFIG_FILE: "config/xg-040g-md.config"
-  REPO_URL: https://github.com/immortalwrt/immortalwrt.git
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-25.12
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -211,7 +211,6 @@ jobs:
           源码仓库: ${{ env.REPO_URL }}
           分支: ${{ env.REPO_BRANCH }}
           使用补丁: ${{ env.SELECTED_PATCH }}
-          Commit Date: ${{ env.COMMIT_DATE }}
           Commit Hash: ${{ env.COMMIT_HASH }}
           Commit: [${{ env.COMMIT_MSG }}](${{ env.REPO_URL }}/commit/${{ env.COMMIT_HASH_FULL }})
           EOF

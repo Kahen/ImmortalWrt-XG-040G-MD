@@ -2,6 +2,7 @@
 # 这是一个自动生成的同步脚本，用于将修改应用到新的 OpenWrt 源码根目录
 
 echo "正在应用补丁文件到当前项目..."
+cp -r -f "package/luci-app-airoha-npu" "../package/"
 rm -f ../target/linux/generic/hack-6.12/400-mtd-spinand-Support-fmsh.patch ../package/boot/uboot-mediatek/patches/342-mtd-spinand-Support-fmsh.patch ../target/linux/generic/backport-6.12/401-01-v6.18-mtd-spinand-add-support-for-FudanMicro-FM25S01A.patch ../target/linux/generic/backport-6.12/401-02-v6.18-mtd-spinand-fmsh-remove-QE-bit-for-FM25S01A-flash.patch
 mkdir -p "../package/boot/uboot-mediatek/patches"
 cp -f "package/boot/uboot-mediatek/patches/100-20-mtd-spi-nand-add-support-for-FudanMicro-chips.patch" "../package/boot/uboot-mediatek/patches/100-20-mtd-spi-nand-add-support-for-FudanMicro-chips.patch"

@@ -19,7 +19,7 @@ on:
       patch_type:
         description: "选择补丁版本"
         required: true
-        default: "patch-bingoguo93"
+        default: "patch-master"
         type: choice
         # ===================== 修改点1：新增patch-master选项 =====================
         options:
